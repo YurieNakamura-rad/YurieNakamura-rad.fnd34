@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="theme-color" content="#000000">
-  <script type="text/javascript" src="./modules/lodash.js"></script>
-  <script type="text/javascript" src="modules/test-boilerplate.js"></script>
-  <script type="text/javascript" src="script.js"></script>
+  <meta name="theme-color" content="##C9DFDC">
+  <link rel ="stylesheet" href="aroma.css">
+  <title> AromaQuiz </title>
 </head>
-
 <body>
-  <h1>DIG プログラミング基礎へようこそ！</h1>
-  <h2>Mac をお使いの方は、 <font color="blue"> Cmd + Option + J</font><br>
-    Windows/Linux をお使いの方は、 <font color="blue"> Control+Shift+J</font> <br>
-    をクリックして、デベロッパーツールを開いてください。</h2>
-  <h2>下記にユニコーンの画像が表示されていれば成功です！</h2>
-  <img src="https://cdn.dribbble.com/users/1281272/screenshots/4515441/unicorn.gif">
-  <h3>30分悩んで進まなくなったら…helpチャンネルで質問してみましょう！</h3>
+  <div class="container" id="container">
+    <div class="quiz-info">
+      全 <span id="total-questions"></span> 問
+  </div>
+  <h1>アロマのクイズ</h1>
+</p>
+  <h2>抽出部位はどこでしょう？</h2>
+  <div class="quiz-container" id="quiz-container">
+    <div class="question-number" id="question-number"></div>
+    <div class="question" id="question"></div>
+    <div class="grid-container" id="choices-container"></div>
+</div>
+<div class="result-section" id="answer-section">
+  <h2>回答結果</h2>
+  <p id="answer-result"></p>
+  <div id="next-question" onclick="nextQuestion()">次の問題へ</div>
+</div>
+<div id="final-result" class="final-section">
+  <h2>最終結果</h2>
+  <p id="score"></p>
+  <div id="restart-quiz" onclick="restartQuiz()">もう一度トライ</div>
+</div>
+<script src="aromaQuiz.js"></script>
+<script src="aroma.js"></script>
 </body>
-
 </html>
