@@ -14,13 +14,15 @@
     <div class="quiz-info">
       全 <span id="total-questions"></span> 問
   </div>
+    
   <h1>アロマのクイズ</h1>
 </p>
   <h2>抽出部位はどこでしょう？</h2>
+    
   <div class="quiz-container" id="quiz-container">
     <div class="question-number" id="question-number"></div>
     <div class="question" id="question"></div>
-    <div class="grid-container" id="choices-container"></div>
+    <div class="choices-container" id="choices-container"></div>
 </div>
     
 <div class="result-section" id="answer-section">
@@ -28,12 +30,15 @@
   <p id="answer-result"></p>
   <div id="next-question" onclick="nextQuestion()">次の問題へ</div>
 </div>
-<div id="final-result" class="final-section">
+    
+<div class="final-section" id="final-result">
   <h2>最終結果</h2>
   <p id="score"></p>
-  <div id="restart-quiz" onclick="restartQuiz()">もう一度トライ</div>
+  <div id="restart-quiz" onclick="restartQuiz()">もう一度挑戦！</div>
 </div>
+    
 <script src="aromaQuiz.js"></script>
 <script src="aroma.js"></script>
 </body>
+  
 </html>
